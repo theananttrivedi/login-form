@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="assets/ding.mp3" as="audio" />
-    <link rel="preload" href="assets/dong.mp3" as="audio" /> 
+    <link rel="preload" href="assets/ding.mp3" />
+    <link rel="preload" href="assets/dong.mp3" /> 
     <link rel="preload" href="assets/circle-check-regular.svg" as="image" />
     <link rel="preload" href="assets/circle-xmark-regular.svg" as="image" /> 
     <link rel="stylesheet" href="styles.css" />
@@ -61,6 +61,14 @@
         </div>
       </form>
     </main>
+
+    <audio class="success-sound" preload="auto">
+      <source src="assets/ding.mp3">
+    </audio>
+
+    <audio class="failure-sound" preload="auto">
+      <source src="assets/oops.mp3">
+    </audio>
 
     <script src="index.js"></script>
   </body>

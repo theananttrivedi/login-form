@@ -8,15 +8,14 @@ const passwordField = document.querySelector("#password");
 const params = new URLSearchParams(window.location.search);
 const container = document.querySelector(".container");
 const message = document.querySelector(".message");
-
+const successSound = document.querySelector(".success-sound");
+const failureSound = document.querySelector(".failure-sound");
 function loginSuccessfulPlay() {
-  var audio = new Audio("assets/ding.mp3");
-  audio.play();
+  successSound.play();
 }
 
 function loginFailedPlay() {
-  var audio = new Audio("assets/oops.mp3");
-  audio.play();
+  failureSound.play();
 }
 
 nightModeBtn.addEventListener("click", () => {
